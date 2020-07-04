@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+	
+    <!-- Define your beans here -->
+    
+    <!-- define the dependency -->
+    <bean id="myFortuneService"
+    		class="com.luv2code.springdemo.HappyFortuneService">
+    	</bean>
+    
+ 	<bean id="myCoach1"
+ 		class="com.spring.demo.one.TrackCoach.java">	 		
+ 	</bean>
+
+   
+    <bean id="myCoach"
+        class="com.spring.demo.one.BaseballCoach.java"> 
+        <constructor-arg ref="myFortune"></constructor-arg>        
+    </bean>
+    
+    
+    <bean id="myFortune"
+ 		class="/Spring-demo-one/src/com/spring/demo/one/HappyFotuneService.java">	 		
+ 	</bean>
+     
+    <bean id="myFortune"
+ 		class="/Spring-demo-one/src/com/spring/demo/one/HappyFotuneService.java">	 		
+ 	</bean>
+   
+
+</beans>
+
+
+
+
+
