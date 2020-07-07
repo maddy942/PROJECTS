@@ -8,31 +8,24 @@
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
-    <bean id="myFortuneService"
-    		class="com.luv2code.springdemo.HappyFortuneService">
-    	</bean>
+    <bean id="myFortune"
+ 		class="com.spring.demo.one.HappyFotuneService">	 		
+ 	</bean>
     
  	<bean id="myCoach1"
- 		class="com.spring.demo.one.TrackCoach.java">	 		
+ 		class="com.spring.demo.one.TrackCoach">	 		
  	</bean>
 
    
     <bean id="myCoach"
-        class="com.spring.demo.one.BaseballCoach.java"> 
+        class="com.spring.demo.one.BaseballCoach"> 
         <constructor-arg ref="myFortune"></constructor-arg>        
     </bean>
-    
-    
-    <bean id="myFortune"
- 		class="/Spring-demo-one/src/com/spring/demo/one/HappyFotuneService.java">	 		
- 	</bean>
-     
-    <bean id="myFortune"
- 		class="/Spring-demo-one/src/com/spring/demo/one/HappyFotuneService.java">	 		
- 	</bean>
-   
+    </beans>
 
-</beans>
+
+
+
 
 
 
