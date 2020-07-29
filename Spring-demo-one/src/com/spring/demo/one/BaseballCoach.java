@@ -16,7 +16,7 @@ public BaseballCoach(FortuneService theFortuneService)
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
+		
 		return fortuneservice.getfortune();
 		
 	}
